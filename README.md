@@ -1,5 +1,7 @@
 # sha1ext
 
+[![Build Status](https://travis-ci.org/CORDEA/sha1ext.svg?branch=develop)](https://travis-ci.org/CORDEA/sha1ext)
+
 Extension of std / sha1 mainly for developers using python, ruby etc.
 
 ## Usage
