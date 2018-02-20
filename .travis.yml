@@ -1,0 +1,17 @@
+sudo: false
+language: c
+os:
+    - linux
+env:
+    - PATH=$PWD/Nim/bin:$PATH
+branches:
+    only:
+        - develop
+install: .travis/install.sh
+before_script:
+    - set -e
+    - set -x
+script:
+    - cd test
+    - nim c -d:testing -r tsha1ext.nim
+    - cd ..
