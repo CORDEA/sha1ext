@@ -9,4 +9,4 @@ srcDir      = "src"
 
 # Deps
 
-requires = "nim >= 0.17.3"
+requires "nim >= 0.17.3"
