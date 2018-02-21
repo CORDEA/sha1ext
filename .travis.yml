@@ -12,6 +12,6 @@ before_script:
     - set -e
     - set -x
 script:
-    - cd test
+    - cd tests
     - nim c -d:testing -r tsha1ext.nim
     - cd ..
