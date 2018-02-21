@@ -46,13 +46,13 @@ sha1.base64digest()
 
 The following two will be the same result.
 
-```
+```nim
 var sha1 = newSha1Digest()
 sha1.update("nim")
 sha1.base64digest()
 ```
 
-```
+```nim
 var sha1 = newSha1Digest()
 sha1.update('n')
 sha1.update('i')
