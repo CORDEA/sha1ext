@@ -19,15 +19,15 @@ import base64
 
 let message = "nim"
 
-echo encode(digest(message))
-echo base64digest(message)
-echo hexdigest(message)
+echo "digest: " & $digest(message)
+echo "base64: " & base64digest(message)
+echo "hex   : " & hexdigest(message)
 
 var digest = newSha1Digest()
 for s in message:
-  echo digest.base64digest()
-  echo digest.hexdigest()
+  echo "base64: " & digest.base64digest()
+  echo "hex   : " & digest.hexdigest()
   digest.update(s)
 
-echo digest.base64digest()
-echo digest.hexdigest()
+echo "base64: " & digest.base64digest()
+echo "hex   : " & digest.hexdigest()
