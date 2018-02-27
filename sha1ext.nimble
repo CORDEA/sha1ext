@@ -1,6 +1,5 @@
 # Package
 
-name        = "sha1ext"
 version     = "0.1.0"
 author      = "Yoshihiro Tanaka"
 description = "std / sha1 extension"
